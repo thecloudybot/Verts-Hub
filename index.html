@@ -18,8 +18,8 @@
   <ul>
     <c><p style="text-align:center"><span style="font-size:36px"><span style="font-family:Lucida Sans Unicode,Lucida Grande,sans-serif"><strong><span style="color:#ffffff">Verts</span> <span style="color:#e67e22">Hub</span></strong></span></span></p></c>
     <cc>
-        <h2 id="details" style="text-align: center;"><span style="color: #ffffff;">Details</span></h2>
-        <p><span style="color: #ffffff;">in progress...</span></p>
+        <h2 id="details" style="text-align: center;"><span style="color: #ffffff; font-size:36px">Details</span></h2>
+        <p><span style="color: #ffffff;"></span></p>
     </cc>
   </ul>
 
@@ -28,6 +28,10 @@
         <li><a href='#details' class='smooth'>Details</a></li>
         <li><a href=''>Support</a></li>
     </ul>
+
+    <div class="scrollbar" id="style-4">
+        <div class="force-overflow"></div>
+    </div>
 
   <style>
     body,html {
@@ -78,6 +82,37 @@
 	    ul {
 		    margin-top: 40px;
 	    }
+    }
+    body {
+        margin-bottom: 200%;
+    }
+
+    .myBox {
+        border: none;
+        padding: 5px;
+        font: 24px/36px sans-serif;
+        width: 200px;
+        height: 200px;
+        overflow: scroll;
+    }
+
+    ::-webkit-scrollbar {
+        width: 12px;
+        height: 12px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #191919;
+        border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background: #e67e22;  
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #bd6416;  
     }
   </style>
 
