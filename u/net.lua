@@ -1,16 +1,14 @@
-local players = game.Players
-local player = game.Players.LocalPlayer
-local NetworkAccess = coroutine.create(function()
-    settings().Physics.AllowSleep = nil
-    while game:GetService("RunService").RenderStepped:Wait() do
-        for _, players in pairs(players:GetPlayers()) do
-            if players ~= player then
-                players.MaximumSimulationRadius = 0
-                sethiddenproperty(players, "SimulationRadius", 0)
-            end 
+local net = coroutine.create(function()
+    settings.Physics.AllowSleep = false
+    while game'RunService'.RenderStepped:wait() do
+        for i,v in pairs(game.Players:GetPlayers()) do
+            if v ~= game.Players.LocalPlayer then
+                v.MaximumSimulationRadius = 0
+                sethiddenproperty(v, 'SimulationRadius', 0)
+            end
         end
-        player.MaximumSimulationRadius = 3e9
-        setsimulationradius(math.huge) 
-    end 
-end) 
-coroutine.resume(NetworkAccess)
+        game.Players.LocalPlayer.MaximumSimulationRadius = 3e9
+        setsimulationradius(math.huge)
+    end
+end)
+coroutine.resume(net)
