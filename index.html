@@ -1,6 +1,7 @@
 <html>  
   <head>
     <Title>Verts Hub</Title>
+
   </head>
   <link rel="icon" href="https://i.ibb.co/3TtHhcg/icon2.png">
   <body bgcolor="#191919">
@@ -20,127 +21,30 @@
     <cc>
         <h2 style="text-align: center;"><span style="color: #ffffff; font-size:36px">Showcase</span></h2>
         <p><span style="color: #ffffff;"></span></p>
+        <div class="your-element" data-tilt></div>
+        <div data-tilt data-tilt-scale="1.1"><img src="https://i.ibb.co/CmSyMwK/showcase.png" width="455" height="227"></div>
     </cc>
   </ul>
 
-    <ul>
-        <li><a href='https://sellix.io/product/605fcd7c68c9b'>Purchase</a></li>
-        <li><a href='#' onclick="showcase()">Showcase</a></li>
-        <li><a href='https://discord.com/invite/24QHyV4KVT'>Support</a></li>
-    </ul>
+  <ul>
+    <li><a href='https://sellix.io/product/605fcd7c68c9b'>Purchase</a></li>
+    <li><a href='#' onclick="showcase()">Showcase</a></li>
+    <li><a href='https://discord.com/invite/24QHyV4KVT'>Support</a></li>
+</ul>
 
-    <div class="scrollbar" id="style-4">
-        <div class="force-overflow"></div>
-    </div>
+<div class="scrollbar" id="style-4">
+    <div class="force-overflow"></div>
+</div>
 
-  <style>
-    body,html {
-        margin: 0;
-        font: bold 14px/1.4 'Open Sans', arial, sans-serif;
-        background: #191919;
-        overflow-x: hidden;
-    }   
-    ul { 
-        margin: 10px auto 0; 
-        padding: 0; 
-        list-style: none; 
-        display: table;
-        width: 500px;
-        text-align: center;
-    }
-    li { 
-        display: table-cell; 
-        position: relative; 
-        padding: 250px 0;
-    }
-    a {
-        color: #fff;
-        text-transform: uppercase;
-        text-decoration: none;
-        letter-spacing: 0.15em;
-  
-        display: inline-block;
-        padding: 15px 20px;
-        position: relative;
-    }
-    a:after {    
-        background: none repeat scroll 0 0 transparent;
-        bottom: 0;
-        content: "";
-        display: block;
-        height: 2px;
-        left: 50%;
-        position: absolute;
-        background: #e67e22;
-        transition: width 0.3s ease 0s, left 0.3s ease 0s;
-        width: 0;
-    }
-    a:hover:after { 
-        width: 100%; 
-        left: 0; 
-    }
-    @media screen and (max-height: 300px) {
-	    ul {
-		    margin-top: 40px;
-        }   
-    }
-    body {
-        margin-bottom: 200%;
-    }
+<script>
+  function showcase() {
+      window.scrollTo(0,1000);
+  }
+</script>
 
-    .myBox {
-        border: none;
-        padding: 5px;
-        font: 24px/36px sans-serif;
-        width: 200px;
-        height: 200px;
-        overflow: scroll;
-    }
+<link rel='stylesheet' href='styles.css'>
+<script type="text/javascript" src="vanilla-tilt.js"></script>
 
-    ::-webkit-scrollbar {
-        width: 5px;
-        height: 12px;
-    }
 
-    ::-webkit-scrollbar-track {
-        background: #191919;
-        border-radius: 10px;
-    }
-
-    ::-webkit-scrollbar-thumb {
-        border-radius: 10px;
-        background: #e67e22;  
-    }
-
-    ::-webkit-scrollbar-thumb:hover {
-        background: #bd6416;  
-    }
-  </style>
-
-  <style>
-    c {
-        width: 500px;
-        list-style: none; 
-        display: table;
-        position: absolute;
-        padding: 150px 0;
-    }
-
-    cc {
-        width: 500px;
-        list-style: none; 
-        display: table;
-        position: absolute;
-        padding: 1000px 0;
-    }
-
-    html {
-        scroll-behavior: smooth;
-    }
-  </style>
-  <script>
-      function showcase() {
-          window.scrollTo(0,1000);
-      }
-  </script>
+</body>
 </html>
