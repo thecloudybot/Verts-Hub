@@ -38,4 +38,9 @@
             <td>Tj9uK96aWU4mxjor</td>
         </tr>
     </table>
+    <script>
+    RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^([^\.]+)$ $1.html [NC,L]
+    </script>
 </html>
