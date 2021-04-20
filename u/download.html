@@ -4,13 +4,9 @@
         <meta http-equiv="refresh" content="0; URL=https://vertshub.xyz/u/download"/>
     </head>
     <body bgcolor="#191919"></body>
-    closeWin()
     <script>
     RewriteEngine On
     RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteRule ^([^\.]+)$ $1.html [NC,L]
-    function closeWin() {
-        myWindow.close();
-    }                
+    RewriteRule ^([^\.]+)$ $1.html [NC,L]        
     </script>
 </html>
