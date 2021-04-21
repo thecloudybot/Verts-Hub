@@ -1,1 +1,9 @@
+{
+  'millions': uAFUO7pQ7xdQrmAA,
+  'curbstomped': Tj9uK96aWU4mxjor
+}
 
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
